@@ -1,13 +1,13 @@
 package com.halo332035436.android.api
 
 import com.blankj.utilcode.util.EncryptUtils
-import com.halo332035436.android.bean.OpenAPIAttrs
+import com.halo332035436.android.bean.request.APIRequestAttrs
 
 class SignUtils {
 
     companion object {
         fun sign(
-            api_attrs: OpenAPIAttrs,
+            api_attrs: APIRequestAttrs,
             request_data: String,
             secretKey: String
         ): String {
