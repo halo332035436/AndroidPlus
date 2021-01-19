@@ -5,6 +5,9 @@ buildscript {
         jcenter { url "https://maven.aliyun.com/repository/jcenter" }
         maven { url "https://maven.aliyun.com/repository/google" }
         mavenCentral() // add repository
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
     }
     dependencies {
         classpath "com.android.tools.build:gradle:4.0.2"

@@ -1,17 +1,16 @@
 package com.halo332035436.android.api
 
-import com.halo332035436.android.Constants
-import com.halo332035436.android.bean.request.APIRequest
 import com.halo332035436.android.bean.response.APIResponse
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class PCCHttpUtils() {
+class PCCHttpUtils {
 
     companion object {
-        fun <K> post( call: Call<APIResponse<K>>, callback: APICallback<K>) {
+        fun <K> post(call: Call<APIResponse<K>>, callback: APICallback<K>) {
             call.enqueue(object : Callback<APIResponse<K>> {
+
                 override fun onFailure(call: Call<APIResponse<K>>, t: Throwable) {
                     callback.onFailure(call, t)
                 }
