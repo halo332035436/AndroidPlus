@@ -22,8 +22,8 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val data = RequestToken(Constants.APP_SECRET)
         btn_get_token.setOnClickListener {
+            val data = RequestToken(Constants.APP_SECRET)
             val request = APIRequest(data, Constants.API_ID_FOR_TOKEN, "1.0")
             val call = RetrofitHolder.getService(PCCService::class.java)
                 .getToken("app", request)
