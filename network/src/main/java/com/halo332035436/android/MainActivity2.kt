@@ -11,6 +11,7 @@ import okhttp3.RequestBody.Companion.toRequestBody
 import okio.IOException
 
 class MainActivity2 : AppCompatActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
@@ -21,7 +22,6 @@ class MainActivity2 : AppCompatActivity() {
         btn_get_token.setOnClickListener {
             val data = RequestToken(Constants.APP_SECRET)
             val request = APIRequest(data, Constants.API_ID_FOR_TOKEN, "1.0")
-
             val body = GsonUtils.toJson(request).toRequestBody()
 
             val okHttpRequest: Request = Request.Builder()
