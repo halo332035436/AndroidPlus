@@ -1,2 +1,3 @@
+include ':algorithm'
 include ':network'
 rootProject.name = "Android++"
