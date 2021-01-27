@@ -1,7 +1,6 @@
-package com.halo332035436.kotlin
+package com.halo332035436.coroutine
 
 import kotlinx.coroutines.*
-import kotlin.concurrent.thread
 
 fun main() {
 //    test1()

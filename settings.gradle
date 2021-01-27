@@ -1,5 +1,6 @@
+include ':ui'
 include ':kotlincode'
 include ':algorithm'
-include ':kotlin'
+include ':coroutine'
 include ':network'
 rootProject.name = "Android++"
