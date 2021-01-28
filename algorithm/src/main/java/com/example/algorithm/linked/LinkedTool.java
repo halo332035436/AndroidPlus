@@ -16,6 +16,16 @@ public class LinkedTool {
         return prev;
     }
 
+    public static ListNode reverseListRecursion(ListNode head) {
+        if (head == null || head.next == null){
+            return head;
+        }
+        ListNode pNode = reverseListRecursion(head.next);
+        head.next.next = head;
+        head.next = null;
+        return pNode;
+    }
+
     //利用快慢指针判断是否有环
     public static boolean hasCycle(ListNode head) {
         if (head == null || head.next == null) return false;

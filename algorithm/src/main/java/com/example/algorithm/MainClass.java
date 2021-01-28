@@ -1,5 +1,6 @@
 package com.example.algorithm;
 
+import com.example.algorithm.array.ArraySolution;
 import com.example.algorithm.exercise.ExerciseTool;
 import com.example.algorithm.linked.LinkedTool;
 import com.example.algorithm.linked.ListNode;
@@ -26,11 +27,15 @@ public class MainClass {
 
 //        LinkedTool.reverseList(listNode1);
 
-        ListNode listNode = LinkedTool.removeElements(listNode1, 2);
-        System.out.println(listNode);
+//        ListNode listNode = LinkedTool.removeElements(listNode1, 2);
+//        System.out.println(listNode);
 
 
-        ExerciseTool.getLight();
+//        ExerciseTool.getLight();
+
+        int[] nums = {-1, 0, 1, 2, -1, -4};
+
+        ArraySolution.threeSum(nums);
     }
 
 }
