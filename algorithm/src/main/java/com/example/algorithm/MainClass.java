@@ -33,9 +33,10 @@ public class MainClass {
 
 //        ExerciseTool.getLight();
 
-        int[] nums = {-1, 0, 1, 2, -1, -4};
+//        int[] nums = {-1, 0, 1, 2, -1, -4};
+        int[] nums = {1,1,2};
 
-        ArraySolution.threeSum(nums);
+        ArraySolution.removeDuplicates(nums);
     }
 
 }
