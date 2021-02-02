@@ -17,7 +17,7 @@ public class LinkedTool {
     }
 
     public static ListNode reverseListRecursion(ListNode head) {
-        if (head == null || head.next == null){
+        if (head == null || head.next == null) {
             return head;
         }
         ListNode pNode = reverseListRecursion(head.next);
@@ -66,5 +66,16 @@ public class LinkedTool {
             curr = curr.next;
         }
         return sentinel.next;
+    }
+
+
+    public static ListNode swapPairs(ListNode head) {
+        if (head == null || head.next == null) {
+            return head;
+        }
+        ListNode newHead = head.next;
+        head.next = swapPairs(newHead.next);
+        newHead.next = head;
+        return newHead;
     }
 }

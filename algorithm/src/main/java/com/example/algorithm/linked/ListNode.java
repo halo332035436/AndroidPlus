@@ -1,6 +1,7 @@
 package com.example.algorithm.linked;
 
 public class ListNode {
+
     public int val;
     public ListNode next;
     public ListNode prev;

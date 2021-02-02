@@ -4,6 +4,7 @@ import com.example.algorithm.array.ArraySolution;
 import com.example.algorithm.exercise.ExerciseTool;
 import com.example.algorithm.linked.LinkedTool;
 import com.example.algorithm.linked.ListNode;
+import com.example.algorithm.sort.SortSolution;
 
 public class MainClass {
 
@@ -34,9 +35,14 @@ public class MainClass {
 //        ExerciseTool.getLight();
 
 //        int[] nums = {-1, 0, 1, 2, -1, -4};
-        int[] nums = {1,1,2};
+        int[] nums = {1, 1, 2};
 
-        ArraySolution.removeDuplicates(nums);
+//        ArraySolution.removeDuplicates(nums);
+
+        int[] array = {4, 5, 6, 3, 2, 1};
+//        SortSolution.bubbleSort(array, 6);
+//        SortSolution.selectionSort(array, 6);
+        SortSolution.mergeSort(array, 6);
     }
 
 }
