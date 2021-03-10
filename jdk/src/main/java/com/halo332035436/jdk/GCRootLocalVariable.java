@@ -6,7 +6,7 @@ public class GCRootLocalVariable {
     private byte[] memory = new byte[8 * _10MB];
 
     public static void main(String[] args){
-        System.out.println("开始时:");
+        System.out.println("start:");
         printMemory();
         method();
         System.gc();
@@ -21,11 +21,10 @@ public class GCRootLocalVariable {
         printMemory();
     }
 
-    /**
-     * 打印出当前JVM剩余空间和总的空间大小
-     */
     public static void printMemory() {
         System.out.print("free is " + Runtime.getRuntime().freeMemory()/1024/1024 + " M, ");
         System.out.println("total is " + Runtime.getRuntime().totalMemory()/1024/1024 + " M, ");
     }
+
 }
+
