@@ -1,3 +1,4 @@
+include ':jetpack'
 include ':jdk'
 include ':ui'
 include ':kotlincode'
