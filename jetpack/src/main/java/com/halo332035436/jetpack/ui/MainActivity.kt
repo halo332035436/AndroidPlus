@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
-    private val TAG = "Lifecycle_Test";
+    private val TAG = "MainActivity";
     private val observer = MainObserver()
     private val liveData = MutableLiveData<String>()
     private val model : NameViewModel by viewModels()
@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
 
         liveData.observe(this,
             Observer<String> {
-                Log.i(TAG, "onChanged: $it");
+                Log.i("liveData.observe", "onChanged: $it");
             })
         Log.i(TAG, "onCreate: ")
         liveData.value = "onCreate"

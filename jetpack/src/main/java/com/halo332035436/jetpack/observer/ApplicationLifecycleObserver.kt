@@ -7,7 +7,7 @@ import androidx.lifecycle.OnLifecycleEvent
 
 class ApplicationLifecycleObserver :LifecycleObserver {
 
-    val TAG = "Lifecycle_Test";
+    val TAG = "Application_Lifecycle";
 
     @OnLifecycleEvent(value = Lifecycle.Event.ON_START)
     fun start() {
